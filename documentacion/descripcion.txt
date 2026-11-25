@@ -1,0 +1,10 @@
+Nombre del proyecto: Caile
+
+Problema:
+Actualmente resulta difícil descubrir, organizar y ubicar fiestas o eventos sociales cercanos en tiempo real, así como conocer de forma rápida y confiable sus detalles clave (ubicación, horario, tipo de ambiente y si el acceso es público o privado).
+
+Objetivo:
+Desarrollar una aplicación o página web donde los usuarios puedan buscar fiestas y eventos, conocer sus detalles (fecha, hora, ubicación, tipo de ambiente y acceso público o privado) y publicar sus propias fiestas para compartirlas con otras personas.
+
+Descripción:
+Caile es una plataforma de geolocalización de eventos sociales diseñada para transformar la manera en que los usuarios descubren, organizan y asisten a fiestas. Mediante un mapa interactivo en tiempo real, permite explorar y filtrar eventos cercanos por fecha, ubicación y tipo de fiesta, consultar los detalles de cada evento, y publicar, editar o eliminar fiestas propias, ya sean públicas o privadas con invitación.
