@@ -4,35 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caile - Encuentra y publica fiestas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0f0c29;
+            color: #f4f4f9;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #24104f, #6a11cb, #ff2a85);
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 15px;
+        }
+        header p {
+            max-width: 700px;
+            margin: 0 auto 15px;
+            font-size: 1.1rem;
+            color: #f0e6ff;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 14px 32px;
+            background-color: #00d4ff;
+            color: #0f0c29;
+            font-weight: bold;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #5ce1ff;
+            transform: scale(1.05);
+        }
+        main {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .banner {
+            margin-bottom: 40px;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+        .seccion {
+            background-color: #1b1642;
+            padding: 30px;
+            border-radius: 14px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+        }
+        .seccion h2 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        .beneficios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #27205c;
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 4px solid #ff2a85;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .card p {
+            color: #d6d2f0;
+            font-size: 0.95rem;
+        }
+        footer {
+            background-color: #141033;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 40px;
+            border-top: 1px solid #2e2666;
+        }
+        footer h2 {
+            color: #ff2a85;
+            margin-bottom: 10px;
+        }
+        footer p {
+            color: #c8c2e8;
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Caile: Tu mapa en tiempo real para las mejores fiestas</h1>
-        <p>Descubre eventos sociales cerca de ti, consulta fecha, hora, ubicación y ambiente, o publica tus propias fiestas públicas y privadas en segundos.</p>
-        <p><strong>¡No te quedes fuera del plan! Conoce Caile y transforma la forma en que sales con tus amigos.</strong></p>
+        <h1>Caile</h1>
+        <p>Tu mapa en tiempo real para descubrir, organizar y publicar las mejores fiestas y eventos sociales cerca de ti.</p>
+        <p><strong>¡No te quedes fuera del plan! Conoce Caile y vive la experiencia.</strong></p>
+        <button class="btn">Comienza ahora</button>
     </header>
 
-    <section>
-        <!-- Banner sencillo integrado -->
-        <svg width="100%" height="180" viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
-            <rect width="800" height="180" rx="12" fill="#2d1b69"/>
-            <circle cx="120" cy="90" r="45" fill="#ff2a85" opacity="0.8"/>
-            <circle cx="680" cy="90" r="55" fill="#00d4ff" opacity="0.6"/>
-            <text x="50%" y="48%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="36" font-weight="bold">CAILE</text>
-            <text x="50%" y="72%" dominant-baseline="middle" text-anchor="middle" fill="#e0d4ff" font-family="Arial, sans-serif" font-size="18">Geolocalización de fiestas y eventos en tiempo real</text>
-        </svg>
-    </section>
+    <main>
+        <div class="banner">
+            <svg width="100%" height="180" viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
+                <rect width="800" height="180" fill="#24104f"/>
+                <circle cx="120" cy="90" r="55" fill="#ff2a85" opacity="0.75"/>
+                <circle cx="680" cy="90" r="65" fill="#00d4ff" opacity="0.55"/>
+                <text x="50%" y="46%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="bold">EXPLORA TU CIUDAD</text>
+                <text x="50%" y="72%" dominant-baseline="middle" text-anchor="middle" fill="#e0d4ff" font-family="Segoe UI, Arial, sans-serif" font-size="18">Fiestas públicas y privadas en un solo mapa interactivo</text>
+            </svg>
+        </div>
 
-    <section>
-        <h2>¿Por qué usar Caile?</h2>
-        <p>Organizar o encontrar una buena fiesta suele ser complicado y desordenado entre tantos chats y redes sociales. Caile centraliza todo en un mapa interactivo para que sepas exactamente qué está pasando a tu alrededor de forma rápida y segura.</p>
+        <section class="seccion">
+            <h2>¿Por qué usar Caile?</h2>
+            <p>Organizar o encontrar una buena fiesta suele ser complicado entre tantos chats y redes sociales. Caile centraliza todos los detalles clave —fecha, hora, ubicación, tipo de ambiente y acceso— en un solo lugar para que decidas tu próximo plan en segundos.</p>
 
-        <h3>Beneficios principales</h3>
-        <ul>
-            <li><strong>Mapa interactivo en tiempo real:</strong> Ubica fácilmente las fiestas activas cerca de ti sin perder tiempo buscando.</li>
-            <li><strong>Filtros inteligentes:</strong> Encuentra el plan ideal filtrando por fecha, ubicación, tipo de ambiente y acceso público o privado.</li>
-            <li><strong>Publicación y control total:</strong> Crea, edita o elimina tus propios eventos y decide si son abiertos al público o privados con invitación.</li>
-        </ul>
-    </section>
+            <div class="beneficios">
+                <div class="card">
+                    <h3>Mapa en tiempo real</h3>
+                    <p>Visualiza al instante las fiestas y eventos sociales que están ocurriendo a tu alrededor.</p>
+                </div>
+                <div class="card">
+                    <h3>Filtros inteligentes</h3>
+                    <p>Busca el ambiente perfecto filtrando por fecha, ubicación, tipo de fiesta y acceso público o privado.</p>
+                </div>
+                <div class="card">
+                    <h3>Control total</h3>
+                    <p>Publica tus propias fiestas, edita los detalles cuando quieras y gestiona quién puede asistir.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contacto</h2>
+        <p>Correo: contacto@caileapp.mx</p>
+        <p>Teléfono: +52 (618) 555-0194</p>
+        <p>Ubicación: Durango, Dgo., México</p>
+        <p style="margin-top: 15px; font-size: 0.85rem; color: #8c85b8;">© 2026 Caile - Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
